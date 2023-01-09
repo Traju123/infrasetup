@@ -3,13 +3,10 @@ provider "azurerm" {
 }
 terraform {
     backend "azurerm" {
-        resource_group_name  = "exampleGroup"
-        storage_account_name = "backendstorageaks"
+        resource_group_name  = "testresourse3112"
+        storage_account_name = "backendsterraformfile"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
-        use_azuread_auth     = true
-        subscription_id      = "00000000-0000-0000-0000-000000000000"
-        tenant_id            = "00000000-0000-0000-0000-000000000000"
     }
 
 }
