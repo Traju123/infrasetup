@@ -3,9 +3,9 @@ provider "azurerm" {
 }
 terraform {
     backend "azurerm" {
-        resource_group_name  = "testresourse3112"
-        storage_account_name = "backendsterraformfile"
-        container_name       = "tfstate"
+        resource_group_name  = "demoresourcegroup"
+        storage_account_name = "trstatefile"
+        container_name       = "demo"
         key                  = "terraform.tfstate"
     }
 
@@ -13,7 +13,7 @@ terraform {
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "demo1"
   location            = "eastus"
-  resource_group_name = "testresourse3112"
+  resource_group_name = "demoresourcegroup"
   dns_prefix          = "test"
 
 
