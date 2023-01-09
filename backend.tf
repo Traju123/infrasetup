@@ -10,11 +10,6 @@ terraform {
     }
 
 }
-
-resource "azurerm_resource_group" "state-demo-secure" {
-  name     = "state-demo"
-  location = "eastus"
-}
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "demo1"
   location            = "eastus"
