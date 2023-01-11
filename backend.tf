@@ -13,7 +13,7 @@ terraform {
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "demo1"
   location            = "eastus"
-  resource_group_name = "backendterraforms"
+  resource_group_name = "testphase4"
   dns_prefix          = "test"
 
 
