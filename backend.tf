@@ -3,17 +3,17 @@ provider "azurerm" {
 }
 terraform {
     backend "azurerm" {
-        resource_group_name  = "demojan12"
-        storage_account_name = "demojan21"
+        resource_group_name  = "demojan13"
+        storage_account_name = "demojan13"
         container_name       = "demo"
         key                  = "terraform.tfstate"
     }
 
 }
 resource "azurerm_kubernetes_cluster" "aks" {
-  name                = "finaltest"
+  name                = "demojan13"
   location            = "eastus"
-  resource_group_name = "demojan12"
+  resource_group_name = "demojan13"
   dns_prefix          = "test"
 
 
